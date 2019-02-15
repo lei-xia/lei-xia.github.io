@@ -1,0 +1,45 @@
+/*
+Original design: Variant Portal (v1.0 - Jun 26, 2010) - A free xhtml/css website template by Andreas Viklund.
+For more information, see http://andreasviklund.com/templates/variant-portal/
+*/
+
+*{margin:0;padding:0;}
+body{background:#eee url(images/body-bg.gif) top center repeat-y;color:#222;font:80% tahoma, verdana, sans-serif;}
+
+a{color:#286ea0;text-decoration:underline;}
+a:hover{color:red;text-decoration:none;}
+a img{border:0;}
+h1{font-size:2.2em;letter-spacing:-1px;margin:0 0 5px; padding:0;}
+h2{font-size:1.6em;margin:0; padding:10px 0 12px;}
+h3{font-size:1.3em;margin:0 0 10px; padding:0;}
+h4{font-size:1.2em;margin:0 0 10px; padding:0;text-decoration:underline;}
+h5{font-size:1em;margin:0; padding:10px 0 5px;}
+p, ul{line-height:1.5em;margin:0 0 18px;text-align:left;}
+ul,ol {list-style:dot; margin:5px 0 0px 20px;}
+hr {clear:both; visibility:hidden;}
+table {}
+
+#container{background:#fff;margin:0 auto 0 auto;width:70%;}
+
+#block{background:#eee url(images/corner.gif) no-repeat top right;padding:10px;border-bottom:1px solid #ccc;border-left:1px solid #ccc;}
+
+#desc{background:#666;clear:both;color:#fff;margin:0 0 15px;padding:15px 15px 2px 15px;}
+#desc a{color:#fff;text-decoration:underline;}
+#desc a:hover{color:#bbb;text-decoration:none;}
+#desc ul{list-style:circle; margin:5px 50px 0px 50px;}
+
+#profile{background:#fff;clear:both;color:#222;margin:0 0 15px;padding:15px 15px 2px 15px;font:100% tahoma, verdana, sans-serif;}
+
+#main{float:middle;padding:0; margin:0px 5% 0% 5%; width:90%;}
+
+#footer{clear:both;background:#555; color:#eee ;margin:30px 0 0;padding:15px;text-align:left;}
+#footer a{color:#eee;}
+#footer p{margin:0; font-size:0.9em; font-weight:700;}
+
+.splitleft {width:37%;float:left;}
+.splitright {margin-left:40%;text-align:left}
+.splitmiddle {margin-left:15%;width:70%;text-align:left}
+
+.right{text-align:right;}
+.block{background:#eee url(images/corner.gif) no-repeat top right;padding:10px;border-bottom:1px solid #ccc;border-left:1px solid #ccc;}
+.hide{display:none;}

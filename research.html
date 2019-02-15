@@ -1,0 +1,191 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="description" content="Lei Xia's homepage" />
+<meta name="keywords" content="Lei, Xia, Northwestern University" />
+<meta name="author" content="Lei Xia / Original design: Andreas Viklund - http://andreasviklund.com/" />
+<link rel="stylesheet" type="text/css" href="variant.css" media="screen,projection" />
+<SCRIPT language=JavaScript src="footnote.js" type=text/javascript></SCRIPT>
+<title>Lei Xia's Research Projects</title>
+</head>
+
+<body>
+<div id="container">
+<h2 align="center">Research Projects</h2>
+<h5 align="right"><a href="index.html">&lt;&lt;&lt; Back To Main Page</a>&nbsp;</h5>
+
+<div id="desc">
+<h2>Research Interest:</h2>
+<ul>
+I like to build computer systems. Broadly, my research interests include:
+<li>Virtualization</li>
+<li>Operating Systems</li>
+<li>High Performance Computing</li>
+<li>Cloud Computing</li>
+<li>Distributed Systems</li>
+</ul>
+<hr />
+<h2>Research Projects:</h2>
+<ul>
+<li><a href="#v3vee">V3VEE</a>: An Open Source Virtual Machine Monitor (VMM) Framework For Modern Architectures</li>
+<li><a href="#vnet">VNET/P</a>:  High Speed/Low Latency Virtual Overlay Network to bridge Cloud and High Performance Computing
+<li><a href="#vwifi">Virtual WiFi</a>: An virtualization approach for wireless network devices (Intern project at Intel Labs during Summer 2010)
+<li><a href="#vpio">Virtual Passthrough I/O (VPIO)</a>: A model-based approach to improve virtualized I/O performance on commodity devices
+<li><a href="http://absynth-project.org/" target="_blank">ABSYNTH</a>: Sensor Network Programming Systems For Non-experts
+</ul>
+<br>
+</div>
+
+<div id="main">
+
+<h2 id="v3vee">V3VEE: An open source virtual machine monitor (VMM) framework for modern architectures (<a href="http://v3vee.org">http://v3vee.org</a>)</h2>
+<p>
+Palacios is a new open-source VMM that enables applications executing 
+in a virtualized
+environment to achieve scalable high performance on large machines.
+Palacios functions as a modularized extension to Kitten,
+a high performance operating system being developed at Sandia
+National Laboratories to support large-scale supercomputing
+applications. Together, Palacios and Kitten provide a thin layer
+over the hardware to support full-featured virtualized environments
+alongside Kitten’s lightweight native environment. Palacios
+supports existing, unmodified applications and operating
+systems by using the hardware virtualization technologies in
+recent AMD and Intel processors. Additionally, Palacios leverages
+Kitten’s simple memory management scheme to enable
+low-overhead pass-through of native devices to a virtualized
+environment. We describe the design, implementation, and
+integration of Palacios and Kitten. Our benchmarks show that
+Palacios provides near native (within 5%), scalable performance
+for virtualized environments running important parallel
+applications. This new architecture provides an incremental
+path for applications to use supercomputers, running specialized
+lightweight host operating systems, that is not significantly
+performance-compromised.
+</p>
+
+<p class="block">
+J. Lange, K. Pedretti, T. Hudson, P. Dinda, Z. Cui, L. Xia, P. Bridges, A. Gocke, S. Jaconette, M. Levenhagen and R. Brightwell.
+<i>Palacios and Kitten: New High Performance Operating Systems For Scalable Virtualized and Native Supercomputing.</i>
+In Proceedings of the 24th IEEE International Parallel and Distributed Processing Symposium (IPDPS'10), Atlanta, GA, April 2010.
+[<a href="docs/ipdps10.pdf">paper</a>] 
+</p>
+
+
+<br>
+<h2 id="vnet">VNET/P: A fast virtual overlay network for high performance computing</h2>
+<p>Overlay networking with a layer 2 abstraction provides a powerful model for virtualized wide-area 
+distributed computing resources, including for high performance computing (HPC) on collections of 
+virtual machines (VMs). With the emergence of cloud computing, it is now possible to allow VMs hosting 
+tightly-coupled HPC applications to seamlessly migrate between distributed cloud resources and tightly-coupled 
+supercomputing and cluster resources. However, to achieve the application performance that the tightlycoupled 
+resources are capable of, it is important that the overlay network not introduce significant overhead relative 
+to the native hardware.</p>
+
+<p>To support such a model, we designed and implemented a virtual networking system that has negligible 
+latency and bandwidth overheads in 1-10 Gbps networks. Our system, VNET/P, is embedded into our publicly 
+available Palacios virtual machine monitor (VMM). VNET/P achieves native performance on 1 Gbps Ethernet 
+networks and very high performance on 10 Gbps Ethernet networks and InfiniBand. On the latter networks, 
+performance is converging to native speeds as we continue to enhance VNET/P.</p>
+
+<p class="block">
+Z. Cui, L. Xia, P. Bridges, P. Dinda and J. Lange. 
+<i>Optimizing Overlay-based Virtual Networking Through Optimistic Interrupts and Cut-through Forwarding.</i>
+In the International Conferences for High Performance Computing, Networking, Storage and Analysis (SC'12), Salt Lake City, Utah, Novermber 2012. 
+[<a href="">paper</a>] 
+<br><br>
+K. Hale, L. Xia and P. Dinda. <i>Shifting GEARS to Enable Guest-context Virtual Services.</i>
+In the 9th International Conference on Autonomic Computing (ICAC'12), San Jose, CA, September 2012. 
+[<a href="">paper</a>] 
+<br><br>
+L. Xia, Z. Cui, J. Lange, Y. Tang, P. Dinda and P. Bridges. 
+<i>VNET/P: Bridging the Cloud and High Performance Computing Through Fast Overlay Networking.</i>
+In 21st International ACM Symposium on High-Performance Parallel and Distributed Computing (HPDC'12). (<b>Best Paper Nominee</b>)
+[<a href="docs/HPDC12-XIA.pdf">paper</a>|<a href="docs/VNET_P_HPDC12_talk.pdf">talk</a>]
+</p>
+
+
+<br>
+<h2 id="vwifi">Virtual WiFi: A virtualization approach for wireless network devices</h2>
+
+<p> New approach to virtualization that enables wifi virtualization. One phyisical WiFi 
+interface is virtualized and can be used in multiple VMs. Current approach is to virtualize 
+an ethernet device inside the GuestVM. This strips all the wifi functionality. 
+The new approach virtualizes complete wifi functionalities in the VM. The same Intel Wifi 
+driver is used in the GuestVM as is used in the HostVM. Each VM gets its own vMAC, HostVM 
+distributes packets according to vMAC, all other capabilities are directly forwarded to 
+the VMs and can be set by the VMs as well. </p>
+
+<p class="block">
+L. Xia, S. Kumar, X. Yang, P. Gopalakrishnan, Y. Liu, S. Schoenberg and X. Guo
+<i>Virtual WiFi: Bring Virtualization from Wired to Wireless.</i>
+In Proceedings of ACM SIGPLAN/SIGOPS International Conference on Virtual Execution Environments (VEE'11), NewportBeach, CA, March 2011. 
+[<a href="docs/vWiFi-vee11.pdf">paper</a>|<a href="docs/VEE11_talk.pdf">talk</a>]
+</p>
+
+
+<h2 id="vpio">Virtual Passthrough I/O (VPIO): A model-based approach to improve virtualized I/O performance on commodity devices</h2>
+
+<br>
+<p>Virtual passthrough I/O (VPIO) is our proposed IO virtualization approach that 
+uses a model-based method to allow virtual passthrough I/O on commodity devices.
+</p>
+
+<p>The current approaches to allow high-performance I/O in guest operating systems 
+are limited. In one approach, the virtual machine provides full emulation of the 
+device in order to multiplex it to each guest operating system; however, this 
+requires significant overhead in the VM. To reduce the performance penalty, a 
+guest might bypass the virtual machine altogether in direct-assignment I/O. 
+However, this approach is less secure, since a guest could affect the memory 
+of other guests or the VM itself. Some devices are multiplexed in the hardware 
+and allow each guest to directly access the device while preserving security, 
+but this feature is not available on commodity I/O devices, nor do these devices
+currently allow migration of guests.</p>
+
+<p>VPIO allows a guest to have direct access to the hardware for most operations and 
+also allows a guest to migrate. VPIO assumes that there is a simple model of the 
+device that can determine (1) whether a device is reusable, (2) whether a DMA is 
+about to be initiated, and (3) what device requests are needed to update the model. 
+VPIO also assumes that the device can be context-switched, that is, that the device 
+can deterministically save or restore the state pertaining to a guest operating system. 
+For the best performance, the goal of VPIO is to have most guest/device interactions 
+complete without an exit into the VM.</p>
+
+<p>Under VPIO, each access to the device must go through a Device Modeling Monitor (DMM). 
+The purpose of DMM is twofold: (1) It saves enough state about the guest and the device 
+that a guest could migrate to a new VM, and (2) it ensures that the VMM enforces proper 
+security. It also keeps track of a hooked I/O list, which is a set of I/O ports that 
+require VM intervention if accessed by a guest. Unhooked I/O ports may be used by the 
+guest directly. The device is multiplexed by performing a context switch on the device 
+(restoring the guest-specific state into the device).</p>
+
+<p>We implemented two example models for NE2000 and RTL8139 network cards and had it running 
+under QEMU. The model was under 1000 lines of code, and only a small fraction of I/Os 
+(about 1 in 30) needed VM intervention. </p>
+
+<p class="block">
+L. Xia, J. Lange, P. Dinda and C. Bae.
+<i>Investigating Virtual Passthrough I/O on Commodity Devices.</i>
+ACM Operating Systems Review, Volume 43, Number 3, July, 2009. [<a href="docs/OSR_Xia.pdf">paper]</a>
+<br><br> 
+L. Xia, J. Lange and P. Dinda. 
+<i>Towards Virtual Passthrough I/O on Commodity Devices.</i> 
+In the First Workshop on I/O Virtualization (WIOV'08), in conjunction with OSDI'08, San Diego, CA, Dec. 2008.
+[<a href="docs/WIOV08.pdf">paper</a>| <a href="docs/WIOV_talk">talk</a>]
+</p>
+
+
+</div>
+
+<div id="footer">
+Copyright &copy; 2008-2012 Lei Xia &middot; 
+<SCRIPT language=JavaScript type=text/javascript>
+<!--
+Footer();
+--></SCRIPT>
+</div>
+
+</div>
+</body>
+</html>

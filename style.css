@@ -1,0 +1,54 @@
+a{
+	font-size: 12px;
+	line-height: 18px;
+	color: #0000ff;
+	text-decoration: underline;
+	font-family: Arial, Helvetica, sans-serif	
+}
+
+a:hover {
+	font-size: 12px;
+	color: #ff0000;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif
+}
+a:linked{
+	font-size: 12px;
+	line-height: 18px;
+	color: #0000ff;
+	text-decoration: underline;
+	font-family: Arial, Helvetica, sans-serif
+}
+
+table {
+	color: #000000;
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif
+}
+
+
+.small{font-size:10px}
+
+.style_bl {
+	FONT-WEIGHT: bold; FONT-SIZE: 28px; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.style_bm {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.style_m {
+	FONT-SIZE: 14px; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.style_word {
+	FONT-SIZE: 12px; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.style_small {
+	FONT-SIZE: 10px; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.style_line {
+	FONT-SIZE: 16px; FONT-FAMILY: Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #ccccff
+}
+
+.title{font-size:24px;
+		font-weight:bold;
+		font-family: Arial, Helvetica, sans-serif
+		}

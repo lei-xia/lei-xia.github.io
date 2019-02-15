@@ -1,0 +1,97 @@
+Review 1
+Confidence: 	1 (low)
+Review:
+ 	
+This paper proposes to virtualize the wireless card to give VMs control 
+over the wireless connections. The paper does a good job of setting up 
+the problem and includes a careful evaluation. The writing is good and 
+the technique appears novel (though this is not my field of expertise).
+
+Overall, I found the paper an interesting read.
+
+
+Review 2
+Confidence: 	3 (high)
+Review: 	
+
+Hypothesis: it is possible to provide wireless LAN virtualization so that 
+the dependence upon wired network virtualization can be broken.
+
+The paper proposes a structure that enables this to happen, have implemented 
+it in KVM, measured its performance, applied conventional virtualization 
+overhead mitigation mechanisms, and demonstrated fully functional wireless 
+capabilities in VMs over this structure, achieving close to native 
+performance of the WLAN.
+
+This is an excellent paper, and should be accepted. I have no issues with it.
+
+
+Review 3
+Confidence: 	2 (medium)
+Review: 	
+
+I do not see why supporting this in the VMM with a para-virtualized driver 
+is not a reasonable approach.
+
+I am not convinced that full device abstraction for wireless devices is not 
+achievable without severely compromising functionality and the architecture 
+presented does not support this.
+
+The 45% additional CPU utilization makes this a non-starter for mobile devices 
+that are power-constrained.
+
+
+
+Review 4
+Confidence: 	3 (high)
+Review: 	
+In this paper, the authors consider the issue of providing access to wifi 
+devices within the context of a VMM environment. They note that traditional 
+network virtualization techniques provide a lowest common denominator virtual 
+network interface to guest operating systems; while this keeps guest drivers 
+simple, and maximizes portability, it means that device-specific functionality 
+cannot be accessed by the guest. For wifi in particular this is problematic, 
+as access control and power management, arguably per-OS concerns, must now 
+be handled by the VMM (or driver VM etc). To address this they propose vWiFi, 
+which uses a combination of direct device access and device emulation to try 
+and provide the best of both worlds. They describe an implementation, characterize 
+it's performance, and suggest a number of optimizations to improve things.
+
+This is a pretty neat paper; there's been quite a bit of work on virtualizing 
+network interfaces in the past, but mostly focusing on performance issues 
+(given that traditionally network virtualization is one of the most costly 
+in terms of CPU overhead and additional per-packet latency). This use case 
+is different, and is less amenable to the solutions advocated by previous 
+research (specifically: handling of TSO/LRO or even full TCP offload by the 
+VMM/driver VM; or direct accesss of a multi-function device). 
+
+The paper is well written modulo a few grammatical errors, and the evaluation 
+is thorough and interesting to read. I advocate acceptance.
+
+A few things I'd like to know more about:
+
+- how do you envisage this scaling up to large #VMs? 
+for client workloads I don't think you need to worry about huge numbers, 
+but 5-10 VMs seems quite plausible.
+
+- your hybrid approach is interesting, but presumably took quite a bit of 
+manual development to get right; are there tricks such as those used by 
+the TwinDrivers work (ASPLOS'09)? that was trying to split a driver 
+between guest and hypervisor, but presumably a similar split could be 
+used in your case to handle the WiFi-specific control interactions?
+
+- you seem to have a 'zero-copy' mode in which the WiFi card DMAs directly 
+from guest memory; how does this maintain network security (e.g. source MAC validation)? 
+what about general host security (e.g. if the relevant page is paged out and 
+reassigned after the translation to physical address?)
+
+- given your motivation for all of this stuff is to enable more sophisticated 
+access/use of the WiFi card by the guest OS, can you demonstrate any of these 
+things in the eval? e.g. the use of power management & overall power saving 
+compared to having (a) host do it; or (b) none at all? or the use of distinct 
+APs (or whatever) by different guests simultaneously?
+
+
+
+
+

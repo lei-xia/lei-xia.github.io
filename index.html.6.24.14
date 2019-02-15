@@ -1,0 +1,249 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="description" content="Lei Xia's homepage" />
+<meta name="keywords" content="Lei, Xia, Northwestern University" />
+<meta name="author" content="Lei Xia / Original design: Andreas Viklund - http://andreasviklund.com/" />
+<link rel="stylesheet" type="text/css" href="variant.css" media="screen,projection" />
+<SCRIPT language=JavaScript src="footnote.js" type=text/javascript></SCRIPT>
+<title>Lei Xia's Homepage</title>
+</head>
+
+<body>
+<div id="container">
+
+<div id="profile">
+<div class="splitleft">
+<img src="pics/lxia.jpg" align="right" width="150" height="200">
+</div>
+
+<div class="splitright">
+<h2>Lei Xia</h2>
+Software Engineer<br>
+<a href="http://www.vmware.com" target="_blank">VMware Inc.</a><br><br>
+3401 Hillview Ave.<br>
+Palo Alto, CA, 94304<br>
+Phone: +1-650-427-1785<br>
+Email: xiaxlei AT gmail DOT com
+</div>
+<hr />
+</div>
+
+<div id="desc">
+<div class="splitmiddle">
+<h2>What is new</h2>
+<ul>
+<li>06/23/2012: Our <a href="publication.html#hpdc12xia">VNET/P paper</a> got nominated as one of three best paper candidates in <a href="http://www.hpdc.org/2012/" target="_blank">HPDC 2012</a>.</li>
+<li>11/19/2011: <a href="http://www.v3vee.org/palacios/" target="_blank">Palacios</a> 1.3 has been released!
+Palacios is an open source virtual machine monitor developed as part of the <a href="http://v3vee.org" target="_blank">V3VEE</a> Project.  
+Try it today by downloading <a href="http://www.v3vee.org/palacios/" target="_blank">here</a>.</li>
+</ul>
+<br>
+</div>
+</div>
+
+<div id="main">
+
+<h3>About Me</h3>
+<p class="block">I am a R&D engineer working on cloud platform and resource management in VMware. I got my Ph.D degree from the Department of <a href="http://www.eecs.northwestern.edu/" target="_blank">Electrical Engineering and
+Computer Science</a> at <a href="http://www.northwestern.edu/" target="_blank">Northwestern University </a> in June 2013. 
+During my Ph.D adventure in Northwestern, I worked in the <a href="http://www.cs.northwestern.edu/~plab/" target="_blank">Prescience Lab</a> 
+with Prof. <a href="http://www.cs.northwestern.edu/~pdinda" target="_blank">Peter A. Dinda</a>. 
+</p>
+<br>
+
+<h3>Curriculum Vitae and Resume</h3>
+<p class="block">
+[Research Statement]<br> 
+[Curriculum Vitae]<br>
+[<a href="docs/Resume_Xia.pdf">Resume</a>]
+</p>
+<br>
+
+<h3>Education</h3>
+<p class="block">
+Ph.D, Computer Science,&nbsp;
+<a href="http://www.northwestern.edu/" target="_blank">Northwestern University</a>, Evanston, IL, 2013.<br>
+M.S. in Computer Science, &nbsp; 
+<a href="http://www.nju.edu.cn/" target="_blank">Nanjing University</a>, Nanjing, China.<br>
+B.S. in Geology, &nbsp;
+<a href="http://www.nju.edu.cn/" target="_blank">Nanjing University</a>, Nanjing, China.
+</p>
+<br>
+
+<h3>Industry Experience</h3><p class="block">Software Engineer, &nbsp;<a href="http://www.vmware.com" target="_blank">VMware</a>,Palo Alto, CA (June, 2013 - present).<br>
+Research Intern, &nbsp;<a href="http://www.hpl.hp.com/research/services_research/" target="_blank">HP Labs</a>,
+Palo Alto, CA (June, 2012 - September, 2012).
+<br>
+Research Intern, &nbsp;<a href="http://techresearch.intel.com/" target="_blank">Intel Labs</a>,
+Hillsboro, OR (June, 2010 - September, 2010).
+<br>
+Graduate Intern, &nbsp;<a href="http://www.motorola.com" target="_blank">Motorola Applied Research Center</a>,
+Schaumburg, IL (June, 2009 - September, 2009).
+</td>
+</p>
+<br>
+
+<h3>Research Interest</h3>
+<div id="block">
+I like to build computer systems. Broadly, my research interests include:
+<ul>
+<li>Virtualization</li>
+<li>Operating Systems</li>
+<li>High Performance Computing</li>
+<li>Cloud Computing</li>
+<li>Distributed Systems</li>
+</ul>
+</div>
+<br>
+
+<h3>Projects</h3>
+<div id="block">
+<ul>
+<li><a href="http://v3vee.org" target="_blank">V3VEE</a>: An Open Source Virtual Machine Monitor (VMM) Framework For Modern Architectures</li>
+<li><a href="research.html#vnet">VNET/P</a>:  High Speed/Low Latency Virtual Overlay Network to bridge Cloud and High Performance Computing
+<li><a href="research.html#vwifi">Virtual WiFi</a>: An virtualization approach for wireless network devices (Intern project at Intel Labs during Summer 2010)
+<li><a href="research.html#vpio">Virtual Passthrough I/O (VPIO)</a>: A model-based approach to improve virtualized I/O performance on commodity devices
+<li><a href="http://absynth-project.org/" target="_blank">ABSYNTH</a>: Sensor Network Programming Systems For Non-experts
+</ul>
+</div>
+<br>
+
+<h3>Selected Publications  <font size="2">&lt;<a href="publication.html">Full Publication List</a>&gt;&nbsp;&lt;<a href="http://scholar.google.com/citations?user=DzdMx30AAAAJ&amp;hl=en" target="_blank">My Google Scholar Profile</a>&gt;</font></h3>
+<div id="block">
+<h4>Journals</h4>
+<ul>
+
+<li>Fast VMM-based Overlay Networking for Bridging the Cloud
+and High Performance Computing. [<a href="docs/VNET_CC13.pdf">paper]</a><br>
+<b>L. Xia</b>, Z. Cui, J. Lange, Y. Tang, P. Dinda and P. Bridges. <br>
+To appear in Cluster Computing, 2013.<br>
+</li><br>
+
+<li>Investigating Virtual Passthrough I/O on Commodity Devices. [<a href="docs/OSR_Xia.pdf">paper]</a><br>
+<b>L. Xia</b>, J. Lange, P. Dinda and C. Bae. <br>    
+ACM Operating Systems Review, Volume 43, Number 3, July, 2009.<br> 
+</li>
+</ul>
+<br>
+<br>
+<h4>Conferences</h4>
+<ul><li id="hpdc14"> ConCORD: Easily Exploiting Memory Content Redundancy Through the Content-aware Service Command. [<a href="">paper</a>|<a href="">talk</a>]<br><b>L. Xia</b>, K. Hale and P. Dinda. <br>To Appear in the 23rd International ACM Symposium on High-Performance Parallel and Distributed Computing (<b>HPDC'14</b>), June 2014. (21/130=16%). </li><br>
+<li id="sc12">
+Optimizing Overlay-based Virtual Networking Through Optimistic Interrupts and Cut-through Forwarding. [<a href="docs/SC12-Cui.pdf">paper</a>] <br>
+Z. Cui, <b>L. Xia</b>, P. Bridges, P. Dinda and J. Lange.<br>
+In the ACM/IEEE International Conference on High Performance Computing, Networking, Storage and Analysis
+(<b>SC'12</b>) (Supercomputing), Salt Lake City, Utah, Novermber 2012.
+</li><br>
+
+<li id="icac12">
+Shifting GEARS to Enable Guest-context Virtual Services. [<a href="docs/ICAC12-Hale.pdf">paper</a>] <br>
+K. Hale, <b>L. Xia</b> and P. Dinda.<br>
+In the 9th International Conference on Autonomic Computing (<b>ICAC'12</b>), San Jose, CA, September 2012.
+</li><br>
+
+<li id="hpdc12xia"> 
+VNET/P: Bridging the Cloud and High Performance Computing Through Fast Overlay Networking. (<font
+color="red"><b>Best Paper Nominee</b></font>) &nbsp;[<a href="docs/HPDC12-XIA.pdf">paper</a>|<a
+href="docs/VNET_P_HPDC12_talk.pdf">talk</a>|<a href="docs/hpdc12-vnet-poster.pdf">poster</a>]<br>
+<b>L. Xia</b>, Z. Cui, J. Lange, Y. Tang, P. Dinda and P. Bridges. <br>
+In Proceedings of the 21st International ACM Symposium on High-Performance Parallel and Distributed Computing (<b>HPDC'12</b>), Delft, Netherlands, June 2012. (23/143=16.1%). 
+</li><br>
+
+<li id="hpdc12chang">
+Dynamic Adaptive Virtual Core Mapping to Improve Power, Energy, and Performance in Multi-socket Multicores. [<a href="docs/HPDC12-Chang.pdf">paper</a>]<br>
+C. Bae, <b>L. Xia</b>, P. Dinda and J. Lange <br>
+In Proceedings of the 21st International ACM Symposium on High-Performance Parallel and Distributed Computing (<b>HPDC'12</b>), Delft, Netherlands, June 2012.
+</li><br>
+
+<li id="vee11">
+Virtual WiFi: Bring Virtualization from Wired to Wireless. [<a href="docs/vWiFi-vee11.pdf">paper</a>|<a href="docs/VEE11_talk.pdf">talk</a>]<br>
+<b>L. Xia</b>, S. Kumar, X. Yang, P. Gopalakrishnan, Y. Liu, S. Schoenberg and X. Guo<br>
+In Proceedings of ACM SIGPLAN/SIGOPS International Conference on Virtual Execution Environments (<b>VEE'11</b>): , NewportBeach, CA, March 2011.
+</li><br>		
+         
+<li id="ipdps10">
+Palacios and Kitten: New High Performance Operating Systems For Scalable Virtualized and Native Supercomputing. [<a href="docs/ipdps10.pdf">paper</a>] <br>
+J. Lange, K. Pedretti, T. Hudson, P. Dinda, Z. Cui, L. Xia, P. Bridges, A. Gocke, S. Jaconette, M. Levenhagen and R. Brightwell. <br>
+In Proceedings of the 24th IEEE International Parallel and Distributed Processing Symposium (<b>IPDPS'10</b>), Atlanta, GA, April 2010.(127/527=24.1%) 
+</li>
+</ul>
+<br>
+<br>
+<h4>Workshops</h4>
+<ul>
+<li id="vtdc12">A Case for Tracking and Exploiting Inter-node and Intra-node Memory Content Sharing in Virtualized Large-Scale Parallel Systems. [<a href="docs/VTDC12-XIA.pdf">paper</a>|<a href="docs/VTDC12_talk">talk</a>]<br>
+<b>L. Xia</b> and P. Dinda<br>
+In the 6th International Workshop on Virtualization Technologies in Distributed Computing (<b>VTDC'12</b>), in conjunction with HPDC'12, Delft, Netherlands, June 2012.
+</li><br>
+
+<li id="wiov08">Towards Virtual Passthrough I/O on Commodity Devices. [<a href="docs/WIOV08.pdf">paper</a>| <a href="docs/WIOV_talk">talk</a>]<br>
+<b>L. Xia</b>, J. Lange and P. Dinda<br>
+In the First Workshop on I/O Virtualization (<b>WIOV'08</b>), in conjunction with OSDI'08, San Diego, CA, Dec. 2008.
+</li><br>
+        
+<li id="wisa07">A Compositional Multiple Policies Operating System Security Model. [<a href="docs/WISA2007.pdf">paper</a>]<br>
+<b>L. Xia</b>, W. Huang and H. Huang<br>
+In the 8th International Workshop on Information Security Applications (<b>WISA'07</b>), Jeju Island, Korea, July 2007.
+</li>
+</ul><br><br><h4>Doctoral Dissertation</h4><ul><li id="phdthesis">ConCORD: Tracking and Exploiting Cross-Node Memory Content Redundancy in Large-Scale Parallel Systems. [<a href="http://v3vee.org/papers/NWU-EECS-13-05.pdf">pdf</a>]<br><b>L. Xia</b><br> Technical Report NWU-EECS-13-05, Department of Electrical Engineering and Computer Science, Northwestern University, July, 2013.</li></ul>
+</div>
+<br>
+
+<h3>Talks</h3>
+<div id="block">
+<ul>
+<li>VNET/P: Bridging the Cloud and High Performance Computing Through Fast Overlay Networking. HPDC'12, June 2012. <a href="docs/VNET_P_HPDC12_talk.pdf">.pdf</a></li>
+<li>A Case for Tracking and Exploiting Inter-node and Intra-node Memory Content Sharing in Virtualized Large-Scale Parallel
+Systems. VTDC'12, June 2012. <a href="docs/VTDC12_talk.pdf">.pdf</a></li>
+<li>Virtual WiFi: Bring Virtualization from Wired to Wireless. VEE'11, March 2011. <a href="docs/VEE11_talk.pdf">.pdf</a></li>
+<li>Towards Virtual Passthrough I/O on Commodity Devices. WIOV'08, December 2008. <a href="docs/WIOV_talk">.pdf</a></li>
+</ul>
+</div>
+<br>
+
+<h3>Teaching</h3>
+<div id="block">
+<ul>
+<li>Teaching Assistant, EECS 441: Resource Virtualization, Winter 2011 (<a href="teaching.html">TA Page</a>)</li>
+<li>Teaching Assistant, EECS 211 Fundamentals of Computer Programming II, Winter 2010</li>
+</ul>
+</div>
+<br>
+
+<h3>Services</h3>
+<div id="block">
+<ul>
+<li>External Reviewer: ICAC'13; IEEE/ACM Transactions on Networking; Cluster Computing; Journal of Computer Networks; SC'12; HPDC'12; ScalComBook'11; IFIP WD'11; ICC 2008;</li><li>Committee Member/Event Coordinator, The Association of Chinese American Scientists and Engineers-USA (ACSE), 2012-2013</li><li>President, Nanjing University Alumni Association of Greater Chicago Area, 2011-2013</li>
+<li>Department Representative, <a href="http://mglc.mccormick.northwestern.edu/" target="_blank">McCormick Graduate Leadership Council(MGLC)</a>, Northwestern University, 2010-2011, 2011-2012</li>
+<li>Organizer, <a href="http://srg.cs.northwestern.edu/" target="_blank">System Reading Group</a>, Department of EECS, Northwestern University, 2011</li>
+</ul>
+</div>
+<br>
+
+<h3>Miscellaneous</h3>
+<div id="block">
+<ul>
+<li>"<a href="http://people.inf.ethz.ch/troscoe/pubs/review-writing.pdf" target="_blank">Writing reviews for systems conferences</a>" From 
+<a href="http://people.inf.ethz.ch/troscoe/" target="_blank">Timothy Roscoe</a>. I found this article is really helpful.
+</li>
+</ul>
+</div>
+<br>
+
+</div>
+
+
+<div id="footer">
+Copyright &copy; 2008-2012 <a href="index.html">Lei Xia</a> &middot; 
+<SCRIPT language=JavaScript type=text/javascript>
+<!--
+Footer();
+--></SCRIPT>
+</div>
+
+
+</body>
+</html>
+

@@ -1,0 +1,91 @@
+The First Workshop on I/O Virtualization (WIOV '08) program committee is
+delighted to inform you that your paper #13 has been accepted to appear at
+the workshop.
+
+      Title: Towards Virtual Passthrough I/O on Commodity Devices
+    Authors: Lei Xia (Northwestern University)
+             Jack Lange (Northwestern University)
+             Peter Dinda (Northwestern University)
+ Paper site: https://papers.usenix.org/hotcrp/wiov08/review?p=13
+
+Your paper was one of 9 accepted out of 20 submissions.  Congratulations!
+
+- WIOV '08 Submissions
+
+===========================================================================
+                          WIOV '08 Review #13A
+              Updated Wednesday 24 Sep 2008 11:53:23am PDT
+---------------------------------------------------------------------------
+     Paper #13: Towards Virtual Passthrough I/O on Commodity Devices
+---------------------------------------------------------------------------
+
+                     Overall merit: 4. Accept
+                           Novelty: 5. This paper will surprise the community
+                    Discussability: 3. Yes
+
+                     ===== Comments for author =====
+
+This paper presents an interesting way of allowing passthrough I/O to devices 
+that do not support virtualization.  The fact that this is even potentially 
+possible is surprising.  I am not 100% convinced that it will work as advertised, 
+but the described technique is interesting enough that it deserves consideration.
+
+I have two main concerns.  The first is that modern NICs (and other devices) 
+rarely use IN/OUT instructions.  They use programmed I/O.  I suspect the technique 
+would work similarly, but I'm not clear on why an antiquated device was chosen to 
+explore the technique.
+
+Second, I don't understand how packets are received when using this technique.  
+It is clear that packets can be transmitted during the period in which the guest 
+"owns" the device.  But, you cannot control receive traffic.  Where do the receive 
+buffers that are enqueued on the device come from?  They cannot come from any guest, 
+because you have no way of knowing ahead of time which guest the received packets 
+will be for.  This issue seems to be completely ignored, and I don't see how device 
+modeling can solve it.
+
+===========================================================================
+                          WIOV '08 Review #13B
+              Updated Wednesday 24 Sep 2008 11:28:49pm PDT
+---------------------------------------------------------------------------
+     Paper #13: Towards Virtual Passthrough I/O on Commodity Devices
+---------------------------------------------------------------------------
+
+                     Overall merit: 4. Accept
+                           Novelty: 4. Novel
+                    Discussability: 3. Yes
+
+===========================================================================
+                          WIOV '08 Review #13C
+               Updated Thursday 25 Sep 2008 4:54:28am PDT
+---------------------------------------------------------------------------
+     Paper #13: Towards Virtual Passthrough I/O on Commodity Devices
+---------------------------------------------------------------------------
+
+                     Overall merit: 3. Weak accept
+                           Novelty: 4. Novel
+                    Discussability: 3. Yes
+
+                     ===== Comments for author =====
+
+This paper describes a technique that provides secure direct access to off the self 
+I/O devices on the Palacios VMM.  The approach is based on interposing a Device 
+Modeling Monitor (DMM) between the device driver running on the guest OS and the 
+hardware.  The DMM intercepts security sensitive calls (such as DMA requests) and 
+models the state of the hardware.  The DMM ensure safe operation of the physical 
+device and can then advice the VMM on when it is safe to context switch the device.
+
+This is an interesting new approach, but I question its shelf life given that future 
+I/O cards are likely to include hardware virtualization support.  The approach also 
+requires device-specific code (i.e., the model) to be written for every device that 
+is to be supported.  While the authors claim that hardware manufacturers could readily 
+provide such models, it is highly unlikely that they will.  I also wonder about how 
+well this approach will handle migration between hosts with different devices.
+
+
+
+
+
+
+
+
+
